@@ -540,6 +540,7 @@ cp -r otel/ /xampp/htdocs/otel
 
 ---
 
+
 ## Lisans
 
 - MIT Lisansı
