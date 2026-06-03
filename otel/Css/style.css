@@ -1,0 +1,448 @@
+
+:root {
+    
+    --navy: #0a1128;        
+    --navy2: #162444;       
+    --gold: #d4af37;        
+    --gold2: #eed16e;       
+    
+    
+    --bg-main: #0d121c;     
+    --surface: #ffff;   
+    --cream: #000000;       
+  
+    --text-main: #ffd000;
+    --text-muted: #ffd000;
+    
+    --bs-font-sans-serif: 'Jost', sans-serif;
+}
+
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+a.footer-link
+{
+    color: #ffffff !important;
+}
+
+p
+{
+    color:#000000  !important;
+}
+p.hero-sub.mt-3.mb-5.fade-in-up.delay-2
+{
+    color: #ffffffff !important;
+}
+span.text-muted
+{
+    color:#000000  !important;
+}
+p.mb-0
+{
+    color: #ffffff !important;
+}
+
+li.mb-2
+{
+color: #ffffff !important;
+}
+
+p.text-muted.small
+{
+   color: #000000 !important;
+}
+
+a.text-muted.small
+{
+   color: #000000 !important;
+}
+
+i.bi.bi-lock.text-muted
+{
+   color: #000000 !important;
+}
+i.bi.bi-envelope.text-muted
+{
+   color: #000000 !important;
+}
+
+i.bi.bi-telephone.text-muted
+{
+   color: #000000 !important;
+}
+p.text-muted.small.mb-1
+{
+   color: #000000 !important;
+}
+
+p.text-muted.small.mb-0
+{
+   color: #000000 !important;
+}
+button.btn.btn-gold.w-100.py-2.mb-3
+{
+    color: #000000 !important;
+}
+ div.text-muted.small
+{
+  color: #000000 !important;
+}
+
+.text-muted {
+    color: #ffffff !important; /* Kendi istediğin renk kodunu yaz */
+}
+
+/* --- Navbar --- */
+#mainNav {
+    /* Beyaz yerine temaya uygun yarı saydam koyu arka plan */
+    background: rgba(10, 17, 40, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    transition: background 0.3s;
+}
+
+.navbar-brand .brand-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold) !important;
+    letter-spacing: 0.04em;
+}
+
+.nav-link { color: var(--text-main) !important; font-size: 0.9rem; letter-spacing: 0.03em; transition: color 0.2s; }
+.nav-link:hover { color: var(--gold) !important; }
+
+/* --- Butonlar --- */
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: all 0.25s;
+}
+.btn-gold:hover { 
+    background: var(--gold2); 
+    color: var(--navy); 
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3); 
+}
+.text-gold { color: var(--gold) !important; }
+
+/* --- Hero Bölümü --- */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 50%, var(--bg-main) 100%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><radialGradient id="g" cx="50%25" cy="50%25"><stop offset="0%25" stop-color="%23d4af37" stop-opacity="0.06"/><stop offset="100%25" stop-color="%23d4af37" stop-opacity="0"/></radialGradient></defs><rect fill="url(%23g)" width="800" height="600"/></svg>') center/cover;
+    pointer-events: none;
+}
+
+.hero-section .hero-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 50px;
+    color: var(--gold);
+    background: rgba(212, 175, 55, 0.05);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.hero-title span { color: var(--gold); }
+
+.hero-sub {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 500px;
+}
+
+/* --- Hero Görsel Kartları --- */
+.hero-gallery {
+    position: relative;
+    height: 480px;
+}
+
+.hero-img-card {
+    position: absolute;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    transition: transform 0.3s;
+}
+
+.hero-img-card:hover { transform: scale(1.02); }
+
+.hero-img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-img-main  { width: 62%; height: 320px; top: 0; right: 0; }
+.hero-img-sm1   { width: 45%; height: 200px; bottom: 0; right: 0; }
+.hero-img-sm2   { width: 44%; height: 200px; bottom: 0; left: 0; }
+
+.hero-stat-card {
+    /* Uyumsuz kırmızı tonlar altın/lacivert temaya uyarlandı */
+    background: rgba(22, 29, 45, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 12px;
+    padding: 16px 24px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero-stat-card .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; color: var(--gold); }
+.hero-stat-card .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+/* --- Bölüm Başlıkları --- */
+.section-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* --- Oda Kartları --- */
+.room-card {
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.25s, box-shadow 0.25s;
+    height: 100%;
+}
+
+.room-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+.room-card .card-img-top { height: 220px; object-fit: cover; }
+.room-card .room-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.badge-bos  { background: rgba(25, 135, 84, 0.2) !important; color: #4ade80 !important; border: 1px solid #198754; }
+.badge-dolu { background: rgba(220, 53, 69, 0.2) !important; color: #f87171 !important; border: 1px solid #dc3545; }
+
+/* --- Hizmetler --- */
+.hizmet-card {
+    text-align: center;
+    padding: 40px 24px;
+    border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: background 0.25s, transform 0.25s, border-color 0.25s;
+}
+
+.hizmet-card:hover { 
+    background: var(--navy); 
+    border-color: rgba(212, 175, 55, 0.3);
+    transform: translateY(-4px); 
+}
+.hizmet-card:hover .hizmet-icon { color: var(--gold2); }
+.hizmet-card:hover h5 { color: #ffffff !important; }
+
+.hizmet-icon { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; display: block; transition: color 0.25s; }
+
+/* --- Rezervasyon Formu --- */
+.rezervasyon-form-wrap {
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+    padding: 40px;
+}
+
+/* --- Dashboard Kartları --- */
+.dash-card {
+    background: var(--surface);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 16px;
+    padding: 28px;
+    height: 100%;
+}
+
+.dash-card .dash-icon { font-size: 2.2rem; color: var(--gold); }
+.dash-card .dash-num  { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 700; color: #ffffff; }
+
+/* --- Tablo stilleri --- */
+.table-otel { color: var(--text-main); }
+.table-otel thead th { 
+    background: var(--navy); 
+    color: #ffffff; 
+    font-weight: 500; 
+    font-size: 0.85rem; 
+    letter-spacing: 0.05em; 
+    border-bottom: 2px solid var(--gold); 
+}
+.table-otel tbody tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+.table-otel tbody tr:hover { background: rgba(255,255,255,0.03); color: var(--gold); }
+
+/* --- Oda durumu renkleri --- */
+.oda-bos  { border-left: 4px solid #4ade80 !important; }
+.oda-dolu { border-left: 4px solid #f87171 !important; }
+
+/* --- Auth sayfaları --- */
+.auth-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-main) 0%, var(--navy) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.auth-card {
+    background: var(--surface);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 20px;
+    padding: 48px 40px;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 440px;
+}
+
+.auth-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-main);
+}
+.form-control:focus { 
+    background: rgba(0,0,0,0.3);
+    border-color: var(--gold); 
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.15); 
+}
+
+/* --- Admin Paneli --- */
+.admin-sidebar {
+    background: var(--navy);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    min-height: 100vh;
+    width: 260px;
+    position: fixed;
+    left: 0; top: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+.admin-sidebar .sidebar-brand {
+    padding: 24px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.admin-sidebar .nav-link {
+    color: var(--text-muted) !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 2px 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    background: rgba(212, 175, 55, 0.1) !important;
+    color: var(--gold) !important;
+}
+
+.admin-sidebar .nav-link i { width: 22px; }
+
+.admin-content {
+    margin-left: 260px;
+    padding: 32px;
+    min-height: 100vh;
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+
+/* --- Footer --- */
+.footer-main {
+    background: #080b12; /* Çok koyu lacivert/siyah */
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); font-weight: 700; }
+.footer-link  { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+.footer-link:hover { color: var(--gold2); }
+
+/* --- Fiyat scroll --- */
+.price-scroll-wrapper { overflow: hidden; }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .hero-gallery { display: none; }
+    .admin-sidebar { width: 100%; min-height: auto; position: static; }
+    .admin-content { margin-left: 0; padding: 16px; }
+    .auth-card { padding: 32px 20px; }
+    .rezervasyon-form-wrap { padding: 24px 16px; }
+}
+
+/* --- Animasyonlar --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up { animation: fadeInUp 0.6s ease both; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
