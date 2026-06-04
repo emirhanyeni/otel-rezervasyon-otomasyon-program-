@@ -325,7 +325,7 @@ INSERT INTO otel_icerik (alan, deger) VALUES
 ('adres',           'Kabaoğlu, Prof. Baki Komşuoğlu Blv. CADDESİ No:518, 41000 İzmit/Kocaeli'),
 ('telefon',         '+90 538 300 0100'),
 ('email_iletisim',  'emirhanyeni63@gmail.com'),
-('check_in',        '06:00'),
-('check_out',       '00:00'),
+('Açılış',        '06:00'),
+('Kapanış',       '00:00'),
 ('hero_baslik',     'Hayalinizin Tatilini Yaşayın'),
 ('hero_alt_baslik', 'Kampüs kenarında lüks, huzur ve unutulmaz anlar sizi bekliyor.');
