@@ -107,7 +107,7 @@ $odalar = db_fetch_all($baglanti,
                             <i class="bi bi-clock-history text-gold fs-4"></i>
                             <div>
                                 <div class="fw-semibold">Açılış</div>
-                                <div class="text-muted small"><?= e($otel_icerik['Açılış'] ?? '08:00') ?></div>
+                                <div class="text-muted small"><?= e($otel_icerik['Açılış'] ?? '06:00') ?></div>
                             </div>
                         </div>
                     </div>
