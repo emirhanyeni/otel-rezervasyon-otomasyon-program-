@@ -519,6 +519,7 @@ cp -r otel/ /xampp/htdocs/otel
 ---
 
 ## 8. Referanslar
+```bash
 
 [^1]: **PHP Resmi Dokümantasyonu** — Prepared Statements, Session yönetimi, `password_hash()` / `password_verify()`.  
   https://www.php.net/manual/tr/
@@ -538,8 +539,8 @@ cp -r otel/ /xampp/htdocs/otel
 [^6]: **Referans Alınan Site** — Projede referans alınan HTML/CSS şablonu.  
   https://colorlib.com/wp/template/the-grand-azure/
 
+```
 ---
-
 
 ## Lisans
 
