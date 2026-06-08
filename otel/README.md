@@ -521,22 +521,22 @@ cp -r otel/ /xampp/htdocs/otel
 ## 8. Referanslar
 ```bash
 
-[^1]: **PHP Resmi Dokümantasyonu** — Prepared Statements, Session yönetimi, `password_hash()` / `password_verify()`.  
+[1]: **PHP Resmi Dokümantasyonu** — Prepared Statements, Session yönetimi, `password_hash()` / `password_verify()`.  
   https://www.php.net/manual/tr/
 
-[^2]: **TK Code Youtube Kanalı** — Trigger, Stored Procedure, View ve Index tasarımı.  
+[2]: **TK Code Youtube Kanalı** — Trigger, Stored Procedure, View ve Index tasarımı.  
   https://www.youtube.com/watch?v=vBIo_UfCqB8&list=PLHp3SJ11RbQIdYlsaTEnpmZVvm3S3Kewc
 
-[^3]: **Bootstrap 5 ** — Grid sistemi, bileşenler, responsive tasarım.  
+[3]: **Bootstrap 5 ** — Grid sistemi, bileşenler, responsive tasarım.  
   https://getbootstrap.com/docs/5.3/
 
-[^4]: **OWASP — SQL Injection Prevention Cheat Sheet** — Güvenli sorgu.  
+[4]: **OWASP — SQL Injection Prevention Cheat Sheet** — Güvenli sorgu.  
   https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
 
-[^5]: **OWASP — XSS Prevention Cheat Sheet** — Çıktı encoding ve temizleme yöntemleri.  
+[5]: **OWASP — XSS Prevention Cheat Sheet** — Çıktı encoding ve temizleme yöntemleri.  
   https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
 
-[^6]: **Referans Alınan Site** — Projede referans alınan HTML/CSS şablonu.  
+[6]: **Referans Alınan Site** — Projede referans alınan HTML/CSS şablonu.  
   https://colorlib.com/wp/template/the-grand-azure/
 
 ```
